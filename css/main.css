@@ -101,3 +101,7 @@ h6 {
 .clear {
     clear: both;
 }
+
+#result, #clientId, #permissionsInteger {
+    width: 10.5em;
+}

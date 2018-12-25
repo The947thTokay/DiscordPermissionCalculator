@@ -28,7 +28,7 @@
     </section>
     <section>
         <form>
-            <label for="clientId">Client ID</label>
+            <label for="clientId">Client ID:</label>
             <input type="text" id="clientId" class="input"/>
             <br /><br />
             <input type="checkbox" id="administrator" class="input" value="8" />
@@ -149,15 +149,11 @@
                 </div>
                 <br class="clear" />
             </div>
-            <br />
-            <div id="container">
-                <label for="result">Result</label>
-                <input type="text" id="result" />
-                <br /><br />
-                <label for="permissionsInteger">Permissions integer</label>
-                <input type="text" id="permissionsInteger" />
-            </div>
         </form>
+        <div id="container">
+            <p>This is your authorization link: <code id="result"></code></p>
+            <p>This is your permissions integer: <code id="permissionsInteger"></code></p>
+        </div>
     </section>
     <footer>
         <p>Thanks for using!</p>
