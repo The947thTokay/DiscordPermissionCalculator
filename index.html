@@ -2,15 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/main.css">
     <title>Mart's Discord Permission Calculator</title>
 </head>
 <body>
-<header>
-    <h1>Mart's Discord Permission Calculator</h1>
-</header>
-<main>
-
-</main>
+<div class="container">
+    <header>
+        <h1>Mart's Discord Permission Calculator</h1>
+        <p>A rubbish tool that generates invite links for your Discord bot</p>
+    </header>
+    <section>
+        <h2>How do I use this?</h2>
+        <p>
+            To give your bot the correct permissions on servers it is invited to,
+            you will need to include a permission integer in the link you share:<br />
+            <code>https://discordapp.com/api/oauth2/authorize?client_id=CLIENT-ID&scope=bot&permissions=PERMISSION-INTEGER</code><br />
+            where <code>CLIENT-ID</code> should be replaced with the client ID of your bot and <code>PERMISSION-INTEGER</code> should be replaced
+            with the permission integer you can calculate with this tool.
+        </p>
+        <p>
+            Select the permissions you want to give to your bot, or choose it to be an administrator (which will allow everything).
+            You can put this in the link above, or give a client ID and copy the link.
+        </p>
+    </section>
+    <section>
+        <!-- The tool goes here -->
+    </section>
+    <footer>
+        <p>Thanks for using!</p>
+    </footer>
+</div>
 </body>
 </html>

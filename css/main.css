@@ -1,1 +1,67 @@
 @import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab');
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Roboto Slab", serif;
+    background: transparent;
+}
+
+code {
+    font-family: "Roboto Mono", monospace;
+    background-color: #d1d1d1;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1.1em;
+}
+
+body {
+    background-color: #b8b8b8;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 5.5em;
+    min-height: 100%;
+    position: relative;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, footer {
+    background-color: black;
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section {
+    background-color: #e6e6e6;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    padding: 1em;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
