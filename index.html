@@ -18,8 +18,8 @@
             To give your bot the correct permissions on servers it is invited to,
             you will need to include a permission integer in the link you share:<br />
             <code>https://discordapp.com/api/oauth2/authorize?client_id=CLIENT-ID&scope=bot&permissions=PERMISSION-INTEGER</code><br />
-            where <code>CLIENT-ID</code> should be replaced with the client ID of your bot and <code>PERMISSION-INTEGER</code> should be replaced
-            with the permission integer you can calculate with this tool.
+            where <code>CLIENT-ID</code> should be replaced by the client ID of your bot and <code>PERMISSION-INTEGER</code> should be replaced
+            by the permission integer you can calculate with this tool.
         </p>
         <p>
             Select the permissions you want to give to your bot, or choose it to be an administrator (which will allow everything).
@@ -27,7 +27,137 @@
         </p>
     </section>
     <section>
-        <!-- The tool goes here -->
+        <form>
+            <label for="clientId">Client ID</label>
+            <input type="text" id="clientId" />
+            <br /><br />
+            <input type="checkbox" id="administrator" class="permission" value="8" />
+            <label for="administrator">Administrator</label>
+            <br /><br />
+            <div class="container">
+                <div class="permissionContainer">
+                    <input type="checkbox" id="create_instant_invite" class="permission" value="" />
+                    <label for="create_instant_invite">Create instant invite</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="kick_members" class="permission" value="" />
+                    <label for="kick_members">Kick members</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="ban_members" class="permission" value="" />
+                    <label for="ban_members">Ban members</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_channels" class="permission" value="" />
+                    <label for="manage_channels">Manage channels</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_guild" class="permission" value="" />
+                    <label for="manage_guild">Manage server</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="add_reactions" class="permission" value="" />
+                    <label for="add_reactions">Add reactions</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="view_audit_log" class="permission" value="" />
+                    <label for="view_audit_log">View audit log</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="view_channel" class="permission" value="" />
+                    <label for="view_channel">View channels</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="send_messages" class="permission" value="" />
+                    <label for="send_messages">Send messages</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="send_tts_messages" class="permission" value="" />
+                    <label for="send_tts_messages">Send TTS messages</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_messages" class="permission" value="" />
+                    <label for="manage_messages">Manage messages</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="embed_links" class="permission" value="" />
+                    <label for="embed_links">Embed links</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="attach_files" class="permission" value="" />
+                    <label for="attach_files">Attach files</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="read_message_history" class="permission" value="" />
+                    <label for="read_message_history">Read message history</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="mention_everyone" class="permission" value="" />
+                    <label for="mention_everyone">Mention everyone</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="use_external_emojis" class="permission" value="" />
+                    <label for="use_external_emojis">Use external emojis</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="connect" class="permission" value="" />
+                    <label for="connect">Connect to voice chat</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="speak" class="permission" value="" />
+                    <label for="speak">Speak in voice chat</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="mute_members" class="permission" value="" />
+                    <label for="mute_members">Mute members</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="deafen_members" class="permission" value="" />
+                    <label for="deafen_members">Deafen members</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="move_members" class="permission" value="" />
+                    <label for="move_members">Move members</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="use_vad" class="permission" value="" />
+                    <label for="use_vad">Use voice activity</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="priority_speaker" class="permission" value="" />
+                    <label for="priority_speaker">Use priority speaker</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="change_nickname" class="permission" value="" />
+                    <label for="change_nickname">Change nickname</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_nicknames" class="permission" value="" />
+                    <label for="manage_nicknames">Manage nicknames</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_roles" class="permission" value="" />
+                    <label for="manage_roles">Manage roles</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_webhooks" class="permission" value="" />
+                    <label for="manage_webhooks">Manage webhooks</label>
+                </div>
+                <div class="permissionContainer">
+                    <input type="checkbox" id="manage_emojis" class="permission" value="" />
+                    <label for="manage_emojis">Manage emojis</label>
+                </div>
+                <br class="clear" />
+            </div>
+            <br />
+            <div id="container">
+                <label for="result">Result</label>
+                <input type="text" id="result" />
+                <br /><br />
+                <label for="permissionsInteger">Permissions integer</label>
+                <input type="text" id="permissionsInteger" />
+            </div>
+        </form>
     </section>
     <footer>
         <p>Thanks for using!</p>
