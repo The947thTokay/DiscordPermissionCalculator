@@ -10,16 +10,16 @@
 <div class="container">
     <header>
         <h1>Mart's Discord Permission Calculator</h1>
-        <p>A rubbish tool that generates invite links for your Discord bot</p>
+        <p>A rubbish tool that generates authorization links for your Discord bot</p>
     </header>
     <section>
-        <h2>How do I use this?</h2>
+        <h2>What is this?</h2>
         <p>
-            To give your bot the correct permissions on servers it is invited to,
-            you will need to include a permission integer in the link you share:<br />
-            <code>https://discordapp.com/api/oauth2/authorize?client_id=CLIENT-ID&scope=bot&permissions=PERMISSION-INTEGER</code><br />
-            where <code>CLIENT-ID</code> should be replaced by the client ID of your bot and <code>PERMISSION-INTEGER</code> should be replaced
-            by the permission integer you can calculate with this tool.
+            If you want to invite a Discord bot to your server, you will need an authorization link.
+            This contains the client ID of the bot, and a permissions integer.
+            This tool calculates that permissions integer for you and gives you the authorization link you can use.
+            You can enter the client ID and select the permissions your bot needs. Finally, you can copy the link
+            and share your bot!
         </p>
         <p>
             Select the permissions you want to give to your bot, or choose it to be an administrator (which will allow everything).
@@ -156,7 +156,7 @@
         </div>
     </section>
     <footer>
-        <p>Thanks for using!</p>
+        <p>Made by Mart Koster</p>
     </footer>
     <script src="main.js"></script>
 </div>
