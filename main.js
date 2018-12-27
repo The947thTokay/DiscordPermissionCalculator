@@ -37,9 +37,12 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 function displayResults() {
-  document.getElementById('result').innerHTML = authorizationUrl
+  let result = authorizationUrl
     .replace('{clientId}', encodeURIComponent(document.getElementById('clientId').value))
     .replace('{permissions}', String(permissionInteger))
+  let link = document.getElementById('result')
+  link.innerHTML = result
+  link.href = result
   document.getElementById('permissionsInteger').innerHTML = permissionInteger
 }
 
