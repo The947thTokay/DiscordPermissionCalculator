@@ -3,7 +3,7 @@ let permissionInputs = document.getElementsByClassName('permission')
 let adminBox = document.getElementById('administrator')
 
 let permissionInteger = 0
-const autorizationUrl = 'https://discordapp.com/api/oauth2/authorize?client_id={clientId}&scope=bot&permissions={permissions}'
+const authorizationUrl = 'https://discordapp.com/api/oauth2/authorize?client_id={clientId}&scope=bot&permissions={permissions}'
 const update = function () {
   if (adminBox.checked === true) {
     for (let i = 0; i < permissionInputs.length; i++) {
@@ -24,7 +24,7 @@ const update = function () {
       }
     }
 
-    permissionInteger = 0;
+    permissionInteger = 0
     for (let i = 0; i < checkedInputs.length; i++) {
       permissionInteger = permissionInteger | checkedInputs[i].value
     }
@@ -37,10 +37,10 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 function displayResults() {
-  document.getElementById('result').innerHTML = autorizationUrl
+  document.getElementById('result').innerHTML = authorizationUrl
     .replace('{clientId}', encodeURIComponent(document.getElementById('clientId').value))
     .replace('{permissions}', String(permissionInteger))
-  document.getElementById('permissionsInteger').innerHTML = permissionInteger;
+  document.getElementById('permissionsInteger').innerHTML = permissionInteger
 }
 
 displayResults()

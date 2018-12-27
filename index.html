@@ -10,7 +10,7 @@
 <div class="container">
     <header>
         <h1>Mart's Discord Permission Calculator</h1>
-        <p>A rubbish tool that generates authorization links for your Discord bot</p>
+        <p>A tool that generates authorization links for your Discord bot</p>
     </header>
     <section>
         <h2>What is this?</h2>
@@ -34,117 +34,117 @@
             <input type="checkbox" id="administrator" class="input" value="8" />
             <label for="administrator">Administrator</label>
             <br /><br />
-            <div class="container">
+            <div id="permissionsList" class="container">
                 <div class="permissionContainer">
-                    <input type="checkbox" id="create_instant_invite" class="permission input" value="" />
+                    <input type="checkbox" id="create_instant_invite" class="permission input" value="1" />
                     <label for="create_instant_invite">Create instant invite</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="kick_members" class="permission input" value="" />
+                    <input type="checkbox" id="kick_members" class="permission input" value="2" />
                     <label for="kick_members">Kick members</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="ban_members" class="permission input" value="" />
+                    <input type="checkbox" id="ban_members" class="permission input" value="4" />
                     <label for="ban_members">Ban members</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_channels" class="permission input" value="" />
+                    <input type="checkbox" id="manage_channels" class="permission input" value="16" />
                     <label for="manage_channels">Manage channels</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_guild" class="permission input" value="" />
+                    <input type="checkbox" id="manage_guild" class="permission input" value="32" />
                     <label for="manage_guild">Manage server</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="add_reactions" class="permission input" value="" />
+                    <input type="checkbox" id="add_reactions" class="permission input" value="64" />
                     <label for="add_reactions">Add reactions</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="view_audit_log" class="permission input" value="" />
+                    <input type="checkbox" id="view_audit_log" class="permission input" value="128" />
                     <label for="view_audit_log">View audit log</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="view_channel" class="permission input" value="" />
-                    <label for="view_channel">View channels</label>
+                    <input type="checkbox" id="view_channel" class="permission input" value="1024" />
+                    <label for="view_channel">Read messages</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="send_messages" class="permission input" value="" />
+                    <input type="checkbox" id="send_messages" class="permission input" value="2048" />
                     <label for="send_messages">Send messages</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="send_tts_messages" class="permission input" value="" />
+                    <input type="checkbox" id="send_tts_messages" class="permission input" value="4096" />
                     <label for="send_tts_messages">Send TTS messages</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_messages" class="permission input" value="" />
+                    <input type="checkbox" id="manage_messages" class="permission input" value="8192" />
                     <label for="manage_messages">Manage messages</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="embed_links" class="permission input" value="" />
+                    <input type="checkbox" id="embed_links" class="permission input" value="16384" />
                     <label for="embed_links">Embed links</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="attach_files" class="permission input" value="" />
+                    <input type="checkbox" id="attach_files" class="permission input" value="32768" />
                     <label for="attach_files">Attach files</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="read_message_history" class="permission input" value="" />
+                    <input type="checkbox" id="read_message_history" class="permission input" value="65536" />
                     <label for="read_message_history">Read message history</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="mention_everyone" class="permission input" value="" />
+                    <input type="checkbox" id="mention_everyone" class="permission input" value="131072" />
                     <label for="mention_everyone">Mention everyone</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="use_external_emojis" class="permission input" value="" />
+                    <input type="checkbox" id="use_external_emojis" class="permission input" value="262144" />
                     <label for="use_external_emojis">Use external emojis</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="connect" class="permission input" value="" />
+                    <input type="checkbox" id="connect" class="permission input" value="1048576" />
                     <label for="connect">Connect to voice chat</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="speak" class="permission input" value="" />
+                    <input type="checkbox" id="speak" class="permission input" value="2097152" />
                     <label for="speak">Speak in voice chat</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="mute_members" class="permission input" value="" />
+                    <input type="checkbox" id="mute_members" class="permission input" value="4194304" />
                     <label for="mute_members">Mute members</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="deafen_members" class="permission input" value="" />
+                    <input type="checkbox" id="deafen_members" class="permission input" value="8388608" />
                     <label for="deafen_members">Deafen members</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="move_members" class="permission input" value="" />
+                    <input type="checkbox" id="move_members" class="permission input" value="16777216" />
                     <label for="move_members">Move members</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="use_vad" class="permission input" value="" />
+                    <input type="checkbox" id="use_vad" class="permission input" value="33554432" />
                     <label for="use_vad">Use voice activity</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="priority_speaker" class="permission input" value="" />
+                    <input type="checkbox" id="priority_speaker" class="permission input" value="256" />
                     <label for="priority_speaker">Use priority speaker</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="change_nickname" class="permission input" value="" />
+                    <input type="checkbox" id="change_nickname" class="permission input" value="67108864" />
                     <label for="change_nickname">Change nickname</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_nicknames" class="permission input" value="" />
+                    <input type="checkbox" id="manage_nicknames" class="permission input" value="134217728" />
                     <label for="manage_nicknames">Manage nicknames</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_roles" class="permission input" value="" />
+                    <input type="checkbox" id="manage_roles" class="permission input" value="268435456" />
                     <label for="manage_roles">Manage roles</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_webhooks" class="permission input" value="" />
+                    <input type="checkbox" id="manage_webhooks" class="permission input" value="536870912" />
                     <label for="manage_webhooks">Manage webhooks</label>
                 </div>
                 <div class="permissionContainer">
-                    <input type="checkbox" id="manage_emojis" class="permission input" value="" />
+                    <input type="checkbox" id="manage_emojis" class="permission input" value="1073741824" />
                     <label for="manage_emojis">Manage emojis</label>
                 </div>
                 <br class="clear" />
