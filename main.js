@@ -1,10 +1,17 @@
-let inputs = document.getElementsByClassName('input')
-let permissionInputs = document.getElementsByClassName('permission')
-let adminBox = document.getElementById('administrator')
-
-let permissionInteger = 0
 const authorizationUrl = 'https://discordapp.com/api/oauth2/authorize?client_id={clientId}&scope=bot&permissions={permissions}'
+let permissionInteger = 0
+
+function displayResults() {
+  document.getElementById('result').innerHTML = authorizationUrl
+    .replace('{clientId}', encodeURIComponent(document.getElementById('clientId').value))
+    .replace('{permissions}', String(permissionInteger))
+  document.getElementById('permissionsInteger').innerHTML = permissionInteger
+}
+
 const update = function () {
+  let permissionInputs = document.getElementsByClassName('permission')
+  let adminBox = document.getElementById('administrator')
+
   if (adminBox.checked === true) {
     for (let i = 0; i < permissionInputs.length; i++) {
       permissionInputs[i].setAttribute('disabled', 'disabled')
@@ -32,15 +39,14 @@ const update = function () {
   }
 }
 
-for (let i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener('input', update, false)
+function load() {
+  let inputs = document.getElementsByClassName('input')
+
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', update, false)
+  }
+
+  displayResults()
 }
 
-function displayResults() {
-  document.getElementById('result').innerHTML = authorizationUrl
-    .replace('{clientId}', encodeURIComponent(document.getElementById('clientId').value))
-    .replace('{permissions}', String(permissionInteger))
-  document.getElementById('permissionsInteger').innerHTML = permissionInteger
-}
-
-displayResults()
+document.addEventListener('DOMContentLoaded', load, false)
