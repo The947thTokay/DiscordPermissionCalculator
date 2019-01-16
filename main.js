@@ -2,9 +2,11 @@ const authorizationUrl = 'https://discordapp.com/api/oauth2/authorize?client_id=
 let permissionInteger = 0
 
 function displayResults() {
-  document.getElementById('result').innerHTML = authorizationUrl
+  let url = authorizationUrl
     .replace('{clientId}', encodeURIComponent(document.getElementById('clientId').value))
     .replace('{permissions}', String(permissionInteger))
+  document.getElementById('result').innerHTML = url
+  document.getElementById('result').href = url
   document.getElementById('permissionsInteger').innerHTML = permissionInteger
 }
 
